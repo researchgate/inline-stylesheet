@@ -20,13 +20,13 @@ class InlineStylesheet {
   static create(base, modifier) {
     if (base && typeof base !== 'string') {
       throw new Error(
-        `InlineStylesheet expects be created with base styles as a string.
+        `InlineStylesheet expects to be created with base styles as a string.
         You've provide base styles of type ${typeof base}`,
       );
     }
     if ((modifier !== null && modifier !== undefined) && (typeof modifier !== 'object' || Array.isArray(modifier))) {
       throw new Error(
-        `InlineStylesheet expects be created with modifier styles defined as an object.
+        `InlineStylesheet expects to be created with modifier styles defined as an object.
         You've provide modifier styles of type ${typeof modifier}`,
       );
     }
@@ -40,14 +40,14 @@ class InlineStylesheet {
   concat(modifier) {
     if (!modifier === null || modifier === undefined) {
       throw new Error(
-        `InlineStylesheet expects be concatinated with modifier styles.
+        `InlineStylesheet expects to be concatinated with modifier styles.
         You haven't provided modifier styles.`,
       );
     }
 
     if (typeof modifier !== 'object' || Array.isArray(modifier)) {
       throw new Error(
-        `InlineStylesheet expects be concatinated with modifier styles defined as an object.
+        `InlineStylesheet expects to be concatinated with modifier styles defined as an object.
         You've provide modifier styles of type ${typeof modifier}`,
       );
     }
@@ -102,7 +102,7 @@ class InlineStylesheet {
   }
 
   /**
-   * Detects if the given node holds actual style definition or is hosting nested definitions and therfore acting as a entrypoint
+   * Detects if the given node holds actual style definition or is hosting nested definitions and therefore acting as a entrypoint
    * @param  {any} node The node to test on
    * @return Boolean       Returns true if the given node is an entrypoint and false if it is a style definition
    */
