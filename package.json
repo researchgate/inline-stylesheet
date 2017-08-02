@@ -1,0 +1,49 @@
+{
+  "name": "@researchgate/inline-stylesheet",
+  "version": "0.1.0",
+  "description": "Inline stylesheets for your components",
+  "main": "lib/js/InlineStylesheet.js",
+  "module": "lib/es/InlineStylesheet.js",
+  "scripts": {
+    "build": "npm run clean:build && npm run build:js && npm run build:es",
+    "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore __tests__,*.scss --copy-files",
+    "build:es": "cross-env BABEL_ENV=production_es babel src/ --out-dir lib/es --ignore __tests__,*.scss --copy-files",
+    "clean:build": "rimraf lib/",
+    "lint": "eslint src/",
+    "precommit": "npm run lint && npm run test",
+    "prepublish": "npm run test && npm run build",
+    "test": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/researchgate/inline-stylesheet.git"
+  },
+  "keywords": [
+    "inline",
+    "stylesheet",
+    "react",
+    "javascript"
+  ],
+  "author": "Roland Loesslein <roland.loesslein@researchgate.net>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/researchgate/inline-stylesheet/issues"
+  },
+  "homepage": "https://github.com/researchgate/inline-stylesheet#readme",
+  "devDependencies": {
+    "babel-cli": "^6.24.1",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.23.0",
+    "babel-preset-env": "^1.6.0",
+    "cross-env": "^5.0.1",
+    "eslint": "^4.3.0",
+    "eslint-config-researchgate-base": "^3.0.0",
+    "eslint-plugin-import": "^2.7.0",
+    "husky": "^0.14.3",
+    "jest": "^20.0.4",
+    "rimraf": "^2.6.1"
+  },
+  "dependencies": {
+    "lodash": "^4.17.4"
+  }
+}
