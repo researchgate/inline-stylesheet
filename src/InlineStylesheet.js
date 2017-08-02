@@ -13,9 +13,9 @@ class InlineStylesheet {
 
   /**
    * Creates an InlineStylesheet instance
-   * @param  {[type]} base     [description]
-   * @param  {[type]} modifier [description]
-   * @return [type]            [description]
+   * @param  {string} base     The base styles
+   * @param  {Object} modifier The style definitions for modifiers
+   * @return {InlineStylesheet}  Returns a new instance of InlineStylesheet
    */
   static create(base, modifier) {
     if (base && typeof base !== 'string') {
@@ -36,6 +36,8 @@ class InlineStylesheet {
 
   /**
    * Concatinates the given modifier style declarations with existing style declarations and returns a new InlineStylesheet instance
+   * @param  {Object} modifier The style definitions for modifiers that should be merged
+   * @return {InlineStylesheet}  Returns a new instance of InlineStylesheet
    */
   concat(modifier) {
     if (!modifier === null || modifier === undefined) {
@@ -60,6 +62,8 @@ class InlineStylesheet {
 
   /**
    * Translates the given css string declaration in to js object syntax
+   * @param  {string} css       The css style declaration to be translated
+   * @return {Object}           Returns a native Javascript object
    */
   _cssToObject(css) {
     const rules = css
@@ -80,6 +84,10 @@ class InlineStylesheet {
 
   /**
    * Resolves style definitions in styles by a given key and value from the props
+   * @param  {Object} styles    The style definitions
+   * @param  {string} key       The modifier name to resolve styles for
+   * @param  {Object} props     The requested modifiers
+   * @return {Object}           Returns a native Javascript object holding the styles
    */
   _resolveStyle(styles, key, props) {
     if (!Object.prototype.hasOwnProperty.call(props, key)) {
@@ -104,7 +112,7 @@ class InlineStylesheet {
   /**
    * Detects if the given node holds actual style definition or is hosting nested definitions and therefore acting as a entrypoint
    * @param  {any} node The node to test on
-   * @return Boolean       Returns true if the given node is an entrypoint and false if it is a style definition
+   * @return {Boolean}  Returns true if the given node is an entrypoint and false if it is a style definition
    */
   _isEntrypoint(node) {
     return typeof node !== 'string';
