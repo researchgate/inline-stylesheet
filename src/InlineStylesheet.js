@@ -40,8 +40,8 @@ class InlineStylesheet {
   concat(modifier) {
     if (!modifier === null || modifier === undefined) {
       throw new Error(
-        'InlineStylesheet expects be concatinated with modifier styles.
-        You haven\'t provided modifier styles.',
+        `InlineStylesheet expects be concatinated with modifier styles.
+        You haven't provided modifier styles.`,
       );
     }
 
