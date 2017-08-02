@@ -4,6 +4,9 @@
   "description": "Inline stylesheets for your components",
   "main": "lib/js/InlineStylesheet.js",
   "module": "lib/es/InlineStylesheet.js",
+  "files": [
+    "lib"
+  ],
   "scripts": {
     "build": "npm run clean:build && npm run build:js && npm run build:es",
     "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore __tests__,*.scss --copy-files",
