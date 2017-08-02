@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/researchgate/inline-stylesheet.svg?branch=master)](https://travis-ci.org/researchgate/inline-stylesheet)
+
 # Inline Stylesheet
 
 A simple Javascript solution to create, maintain and resolve styles for inline usage in your components.
