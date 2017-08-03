@@ -1,5 +1,6 @@
-[![Build Status](https://travis-ci.org/researchgate/inline-stylesheet.svg?branch=master)](https://travis-ci.org/researchgate/inline-stylesheet)
-[![codecov](https://codecov.io/gh/researchgate/inline-stylesheet/branch/master/graph/badge.svg)](https://codecov.io/gh/researchgate/inline-stylesheet)
+[![npm (scoped)](https://img.shields.io/npm/v/@researchgate/inline-stylesheet.svg)]()
+[![Travis](https://img.shields.io/travis/researchgate/inline-stylesheet.svg)]()
+[![Codecov](https://img.shields.io/codecov/c/github/researchgate/inline-stylesheet.svg)]()
 
 # Inline Stylesheet
 
