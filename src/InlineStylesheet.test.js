@@ -70,7 +70,7 @@ test('support concatination after creation', () => {
   };
   expect(actual).toEqual(expected);
 });
-//
+
 describe('resolves styles', () => {
   const styles = InlineStylesheet
     .create(`
@@ -109,7 +109,7 @@ describe('resolves styles', () => {
           background: grey;
         `,
       });
-  //
+
   test('when no modifiers are given', () => {
     const expected = {
       fontSize: '12px',
