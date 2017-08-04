@@ -96,7 +96,7 @@ class InlineStylesheet {
       );
     }
 
-    const resolvedStyle = styles[key][props[key]];
+    const resolvedStyle = typeof styles[key] === 'string' ? styles[key] : styles[key][props[key]];
 
     if (this._isEntrypoint(resolvedStyle)) {
       return this._resolveStyle(
