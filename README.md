@@ -227,7 +227,7 @@ stylesheet.styles({ theme: 'ghost', color: 'green' });
 ```
 
 ### Boolean modifiers
-Some modifiers exist as booleans only. Depending on whether the value of the said modifier is set to 'true' or not, the styles will be applied accordingly.
+In some cases you'd like to define modifiers as a simple boolean value. `InlineStylesheet` also covers that:
 
 ```js
 const stylesheet = InlineStylesheet.create(`
@@ -236,6 +236,7 @@ const stylesheet = InlineStylesheet.create(`
 `, {
   disabled:`
     background: grey;
+    border-color: grey;
   `,
 });
 
@@ -244,6 +245,7 @@ const stylesheet = InlineStylesheet.create(`
     fontSize: '12px';
     border: '1px solid';
     background: 'grey';
+    border-color: 'grey';
 }
  */
 stylesheet.styles({ disabled: true });
