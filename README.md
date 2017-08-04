@@ -4,6 +4,8 @@
 
 # Inline Stylesheet
 
+[![Greenkeeper badge](https://badges.greenkeeper.io/researchgate/inline-stylesheet.svg)](https://greenkeeper.io/)
+
 A simple Javascript solution to create, maintain and resolve styles for inline usage in your components.
 
 [Motivation](#motivation) <br/>
