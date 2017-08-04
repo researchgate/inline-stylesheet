@@ -70,7 +70,7 @@ test('support concatination after creation', () => {
   };
   expect(actual).toEqual(expected);
 });
-
+//
 describe('resolves styles', () => {
   const styles = InlineStylesheet
     .create(`
@@ -105,8 +105,11 @@ describe('resolves styles', () => {
         status: {
           disabled: 'color: white; background: grey;',
         },
+        disabled: `
+          background: grey;
+        `,
       });
-
+  //
   test('when no modifiers are given', () => {
     const expected = {
       fontSize: '12px',
@@ -122,6 +125,15 @@ describe('resolves styles', () => {
       background: 'red',
     };
     const actual = styles.styles({ size: 'l' });
+    expect(actual).toEqual(expected);
+  });
+
+  test('when boolean modifiers are given', () => {
+    const expected = {
+      fontSize: '12px',
+      background: 'grey',
+    };
+    const actual = styles.styles({ disabled: true });
     expect(actual).toEqual(expected);
   });
 

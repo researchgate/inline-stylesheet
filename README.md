@@ -185,7 +185,7 @@ stylesheet.concat({
 ## Advanced usage
 
 ### Modifiers with dependencies
-Sometimes modifiers to depend on each other. Image a button that needs to apply colors differently depending on the given theme. Therefore you can use the feature of nested modifier style declaration.
+Sometimes modifiers depend on each other. Image a button that needs to apply colors differently depending on the given theme. Therefore you can use the feature of nested modifier style declaration.
 
 ```js
 const stylesheet = InlineStylesheet.create(`
@@ -224,6 +224,29 @@ const stylesheet = InlineStylesheet.create(`
 }
  */
 stylesheet.styles({ theme: 'ghost', color: 'green' });
+```
+
+### Boolean modifiers
+Some modifiers exist as booleans only. Depending on whether the value of the said modifier is set to 'true' or not, the styles will be applied accordingly.
+
+```js
+const stylesheet = InlineStylesheet.create(`
+  font-size: 12px;
+  border: 1px solid;
+`, {
+  disabled:`
+    background: grey;
+  `,
+});
+
+/*
+  {
+    fontSize: '12px';
+    border: '1px solid';
+    background: 'grey';
+}
+ */
+stylesheet.styles({ disabled: true });
 ```
 
 ### Define styles using string templates
