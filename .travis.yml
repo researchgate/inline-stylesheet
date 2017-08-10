@@ -5,6 +5,14 @@ node_js:
 script:
   - npm run lint
   - npm test -- --coverage
+  
+before_install:
+  - npm install -g npm@5
+  - npm install -g greenkeeper-lockfile@1
+  
+before_script: greenkeeper-lockfile-update
+
+after_script: greenkeeper-lockfile-upload
 
 after_success:
   - bash <(curl -s https://codecov.io/bash)
