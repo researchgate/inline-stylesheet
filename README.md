@@ -34,7 +34,7 @@ const stylesheet = InlineStylesheet.create(`
 `);
 
 const Button = ({ href, size, color }) => (
-    <A style={stylesheet.styles()}></A>
+    <A style={stylesheet.build()}></A>
 );
 
 ```
@@ -70,9 +70,26 @@ const stylesheet = InlineStylesheet.create(`
 });
 
 const Button = ({ href, size, color }) => (
-    <A style={stylesheet.styles({ size, color })}></A>
+    <A style={stylesheet.build({ size, color })}></A>
 );
 
+```
+
+### Define styles as tagged template with dynamic props
+
+```js
+import InlineStylesheet from '@researchgate/inline-stylesheet';
+
+const sheet = InlineStylesheet.create`
+  font-family: sans-serif;
+  font-size: ${props => props.size === 'big' ? 30 : 15}px;
+  font-color: ${props => props.inverted ? 'white' : 'black'};
+  background-color: ${props => props.inverted ? 'black' : 'white'};
+`;
+
+const Button = ({ inverted, size, ...props }) => (
+  <button {...props} style={sheet.build({ inverted, size })} />
+);
 ```
 
 ## API
@@ -224,7 +241,7 @@ const stylesheet = InlineStylesheet.create(`
     borderColor: '';
 }
  */
-stylesheet.styles({ theme: 'ghost', color: 'green' });
+stylesheet.build({ theme: 'ghost', color: 'green' });
 ```
 
 ### Boolean modifiers
@@ -249,7 +266,7 @@ const stylesheet = InlineStylesheet.create(`
     border-color: 'grey';
 }
  */
-stylesheet.styles({ disabled: true });
+stylesheet.build({ disabled: true });
 ```
 
 ### Define styles using string templates
