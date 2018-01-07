@@ -1,3 +1,4 @@
 {
-    "extends": "eslint-config-researchgate-base"
+    "parser": "babel-eslint",
+    "extends": "@researchgate/eslint-config-rg-node-babel"
 }

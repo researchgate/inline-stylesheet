@@ -6,16 +6,14 @@ import camelCase from 'lodash/camelCase';
  * @return {Object}           Returns a native Javascript object
  */
 export default function cssStringToObject(css) {
-  if (typeof css !== 'string') return {};
+    if (typeof css !== 'string') return {};
 
-  const rules = css
-    .replace(/\s+/g, ' ')
-    .split(/;/);
+    const rules = css.replace(/\s+/g, ' ').split(/;/);
 
-  rules.pop();
+    rules.pop();
 
-  return rules.reduce((styles, rule) => {
-    const [name, value] = rule.split(':');
-    return { ...styles, [camelCase(name)]: value.trim() };
-  }, {});
+    return rules.reduce((styles, rule) => {
+        const [name, value] = rule.split(':');
+        return { ...styles, [camelCase(name)]: value.trim() };
+    }, {});
 }
