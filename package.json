@@ -9,8 +9,8 @@
   ],
   "scripts": {
     "build": "npm run clean:build && npm run build:js && npm run build:es",
-    "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore *.test.js --copy-files",
-    "build:es": "cross-env BABEL_ENV=production_es babel src/ --out-dir lib/es --ignore *.test.js --copy-files",
+    "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore __tests__",
+    "build:es": "cross-env BABEL_ENV=production_es babel src/ --out-dir lib/es --ignore __tests__",
     "clean:build": "rimraf lib/",
     "format": "eslint --fix src/",
     "lint": "eslint src/",
