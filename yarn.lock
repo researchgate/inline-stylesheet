@@ -63,21 +63,21 @@
     lodash "^4.2.0"
     to-fast-properties "^2.0.0"
 
-"@researchgate/eslint-config-rg-base@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-base/-/eslint-config-rg-base-4.0.0.tgz#5ba6c88fafc7c64f7f0fbd55e8be74dc63be235b"
+"@researchgate/eslint-config-rg-base@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-base/-/eslint-config-rg-base-5.0.0.tgz#e7ebec4afff84bb9eaa4f5166547ce5dcfb61c67"
 
-"@researchgate/eslint-config-rg-node-babel@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-node-babel/-/eslint-config-rg-node-babel-4.0.0.tgz#8d4975b4ab0a2225fefaf2041504cce8382a0c3e"
+"@researchgate/eslint-config-rg-node-babel@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-node-babel/-/eslint-config-rg-node-babel-5.0.0.tgz#6202dc12089b5ce4f2426d40043617d413d5359b"
   dependencies:
-    "@researchgate/eslint-config-rg-node" "^4.0.0"
+    "@researchgate/eslint-config-rg-node" "^5.0.0"
 
-"@researchgate/eslint-config-rg-node@^4.0.0":
-  version "4.0.0"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-node/-/eslint-config-rg-node-4.0.0.tgz#8e9dca2434a73dc78dfdd961a56c7efee79690ab"
+"@researchgate/eslint-config-rg-node@^5.0.0":
+  version "5.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-rg-node/-/eslint-config-rg-node-5.0.0.tgz#abcb943db2bc7808f7da9a1462f6e5147096e00f"
   dependencies:
-    "@researchgate/eslint-config-rg-base" "^4.0.0"
+    "@researchgate/eslint-config-rg-base" "^5.0.0"
 
 "@types/node@*":
   version "8.5.7"
