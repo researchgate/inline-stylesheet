@@ -37,7 +37,7 @@
   "devDependencies": {
     "@researchgate/eslint-config-rg-node-babel": "^4.0.0",
     "babel-cli": "^6.24.1",
-    "babel-eslint": "^8.1.2",
+    "babel-eslint": "^10.0.0",
     "babel-plugin-transform-class-properties": "^6.24.1",
     "babel-plugin-transform-object-rest-spread": "^6.23.0",
     "babel-preset-env": "^1.6.0",
