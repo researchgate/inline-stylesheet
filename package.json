@@ -54,5 +54,8 @@
   },
   "dependencies": {
     "lodash": "^4.17.4"
+  },
+  "resolutions": {
+    "tar": "^4.4.2"
   }
 }
