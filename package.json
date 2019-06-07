@@ -1,6 +1,6 @@
 {
   "name": "@researchgate/inline-stylesheet",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "description": "Inline stylesheets for your components",
   "main": "lib/js/InlineStylesheet.js",
   "module": "lib/es/InlineStylesheet.js",
