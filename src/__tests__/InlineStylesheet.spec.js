@@ -1,4 +1,3 @@
-/* global describe, test, expect */
 import InlineStylesheet from '../InlineStylesheet';
 
 describe('supports instantiation', () => {
