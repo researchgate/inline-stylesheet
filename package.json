@@ -7,10 +7,13 @@
   "files": [
     "lib"
   ],
+  "engines": {
+    "node": ">=8.9.0"
+  },
   "scripts": {
     "build": "npm run clean:build && npm run build:js && npm run build:es",
-    "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore __tests__",
-    "build:es": "cross-env BABEL_ENV=production_es babel src/ --out-dir lib/es --ignore __tests__",
+    "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore **/__tests__",
+    "build:es": "cross-env BABEL_ENV=production_es babel src/ --out-dir lib/es --ignore **/__tests__",
     "clean:build": "rimraf lib/",
     "format": "eslint --fix src/",
     "lint": "eslint src/",
@@ -35,27 +38,24 @@
   },
   "homepage": "https://github.com/researchgate/inline-stylesheet#readme",
   "devDependencies": {
-    "@researchgate/eslint-config-rg-node-babel": "^4.0.0",
-    "babel-cli": "^6.24.1",
-    "babel-eslint": "^8.1.2",
-    "babel-plugin-transform-class-properties": "^6.24.1",
-    "babel-plugin-transform-object-rest-spread": "^6.23.0",
-    "babel-preset-env": "^1.6.0",
-    "cross-env": "^5.0.1",
-    "eslint": "^5.0.0",
-    "eslint-config-prettier": "^2.9.0",
-    "eslint-plugin-import": "^2.7.0",
-    "eslint-plugin-node": "^6.0.0",
-    "eslint-plugin-prettier": "^2.3.1",
-    "husky": "^0.14.3",
-    "jest": "^22.0.4",
-    "prettier": "^1.9.1",
-    "rimraf": "^2.6.1"
+    "@babel/cli": "^7.6.2",
+    "@babel/core": "^7.6.2",
+    "@babel/plugin-proposal-class-properties": "^7.5.5",
+    "@babel/preset-env": "^7.6.2",
+    "@researchgate/eslint-config-node-babel": "^1.4.2",
+    "babel-eslint": "^10.0.3",
+    "cross-env": "^6.0.3",
+    "eslint": "^6.5.1",
+    "eslint-config-prettier": "^6.3.0",
+    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-node": "^10.0.0",
+    "eslint-plugin-prettier": "^3.1.1",
+    "husky": "^3.0.8",
+    "jest": "^24.9.0",
+    "prettier": "^1.18.2",
+    "rimraf": "^3.0.0"
   },
   "dependencies": {
-    "lodash": "^4.17.4"
-  },
-  "resolutions": {
-    "tar": "^4.4.2"
+    "lodash": "^4.17.15"
   }
 }
