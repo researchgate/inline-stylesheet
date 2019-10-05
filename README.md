@@ -1,7 +1,6 @@
 [![npm (scoped)](https://img.shields.io/npm/v/@researchgate/inline-stylesheet.svg)](https://www.npmjs.com/package/@researchgate/inline-stylesheet)
 [![Travis](https://img.shields.io/travis/researchgate/inline-stylesheet.svg)](https://travis-ci.org/researchgate/inline-stylesheet)
 [![Codecov](https://img.shields.io/codecov/c/github/researchgate/inline-stylesheet.svg)](https://codecov.io/gh/researchgate/inline-stylesheet)
-[![Greenkeeper badge](https://badges.greenkeeper.io/researchgate/inline-stylesheet.svg)](https://greenkeeper.io/)
 
 # Inline Stylesheet
 
