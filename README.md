@@ -1,5 +1,5 @@
 [![npm (scoped)](https://img.shields.io/npm/v/@researchgate/inline-stylesheet.svg)](https://www.npmjs.com/package/@researchgate/inline-stylesheet)
-[![Travis](https://img.shields.io/travis/researchgate/inline-stylesheet.svg)](https://travis-ci.org/researchgate/inline-stylesheet)
+[![Build Status](https://www.travis-ci.com/researchgate/inline-stylesheet.svg?branch=master)](https://www.travis-ci.com/researchgate/inline-stylesheet)
 [![Codecov](https://img.shields.io/codecov/c/github/researchgate/inline-stylesheet.svg)](https://codecov.io/gh/researchgate/inline-stylesheet)
 
 # Inline Stylesheet
