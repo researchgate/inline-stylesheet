@@ -1,0 +1,4 @@
+{
+  "extends": ["@researchgate"],
+  "labels": ["dependencies"]
+}
