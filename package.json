@@ -7,9 +7,6 @@
   "files": [
     "lib"
   ],
-  "engines": {
-    "node": ">=8.9.0"
-  },
   "scripts": {
     "build": "npm run clean:build && npm run build:js && npm run build:es",
     "build:js": "cross-env BABEL_ENV=production_js babel src/ --out-dir lib/js --ignore **/__tests__",
