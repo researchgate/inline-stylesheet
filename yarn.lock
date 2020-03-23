@@ -987,17 +987,17 @@
   resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-base/-/eslint-config-base-1.4.2.tgz#305526aee9c8213d20776f7a79275d563bc019f6"
   integrity sha512-c6F+7VEAourwlJXi+2explFjR3Pi7mxq3U6Aw3hkZS05GcnaZ2g1mt9g5/Qi6xc7kA6iErgg5nf+bfUIeoXzzQ==
 
-"@researchgate/eslint-config-node-babel@1.4.4":
-  version "1.4.4"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-1.4.4.tgz#3c56eb95e0d2c26739d2d7b06f0cda5804622750"
-  integrity sha512-PE/DQIIQ/1F3qPC2+6GjD8Teb/8YPfrJJ5/mKpT4pnr9WybmDOwckCSwxpmJj7iorEByEhG1fkp9xJtbSOb+ow==
+"@researchgate/eslint-config-node-babel@1.4.5":
+  version "1.4.5"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-1.4.5.tgz#448fd427d24e4906a3831f7247c2ae2c802f3fb1"
+  integrity sha512-tmFoM9pt5bZqtTdj2YW3xUMNJuXFQRXi7oO15oQ1X4UjruTIoRVnAgQaiw7Xgz52M68aMysii17hRbfwfE18+w==
   dependencies:
-    "@researchgate/eslint-config-node" "^1.5.2"
+    "@researchgate/eslint-config-node" "^1.5.3"
 
-"@researchgate/eslint-config-node@^1.5.2":
-  version "1.5.2"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-1.5.2.tgz#9f210968b3bfa86f85a694b683af7c0c56e3ac4f"
-  integrity sha512-v9fy9AlFEGJ2E+xoWWDTBXqgYqMnfM7C8xnFbX3UKo1adpWvtQaWiYif1+dAi6O2VwtSzBO+3y81z8SCaPzoOg==
+"@researchgate/eslint-config-node@^1.5.3":
+  version "1.5.3"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-1.5.3.tgz#368127d0681954d76903b4219584b33cbf69d4dd"
+  integrity sha512-S3bI9/K/BdKEwdNOGA9iRmAxQVsew3TG3uuCXSlCNg6c42XzaxmZzNlUCXGP/MIAn7e/dX4nWVJoUb1jcSs67A==
   dependencies:
     "@researchgate/eslint-config-base" "^1.4.2"
 
