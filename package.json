@@ -38,7 +38,7 @@
     "@babel/cli": "7.8.4",
     "@babel/core": "7.9.0",
     "@babel/plugin-proposal-class-properties": "7.8.3",
-    "@babel/preset-env": "7.9.0",
+    "@babel/preset-env": "7.9.5",
     "@researchgate/eslint-config-node-babel": "1.4.6",
     "babel-eslint": "10.1.0",
     "cross-env": "7.0.2",
