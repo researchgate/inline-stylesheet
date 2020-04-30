@@ -996,24 +996,24 @@
     "@types/yargs" "^15.0.0"
     chalk "^3.0.0"
 
-"@researchgate/eslint-config-base@^1.4.3":
-  version "1.4.3"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-base/-/eslint-config-base-1.4.3.tgz#4438a06afa772495f16f54782cbb13f3009eee23"
-  integrity sha512-HMxz02yFevtMbVLGFATzEurNh6gY2bnDDaptik7XNpd4ToHGV/arz4FEfYFuEIBpKszAa8TX/iUDtBIEX/8WTg==
+"@researchgate/eslint-config-base@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-base/-/eslint-config-base-2.0.0.tgz#c95e7c9335e4b7e164af34d51319ad74ec76d8f1"
+  integrity sha512-K40j9woxB4i4LD+mfDpB/Xdd44jI8l+J1er3CwwWNANpMI+h58QO3GU8hMsw4Uxo/txQdrbOlZQq7Rw2p6o79w==
 
-"@researchgate/eslint-config-node-babel@1.4.6":
-  version "1.4.6"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-1.4.6.tgz#81dd4c025323420860a8ab21ae791f656a7cc9e7"
-  integrity sha512-CyedizBQ/S+BA9BCkDPHaJgHg7u1QwQbDDOzgLwcacS1U2WHQM0J0zsHqi/t5Ac02hdnTwlfLLnKJWIlDwzxqw==
+"@researchgate/eslint-config-node-babel@2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node-babel/-/eslint-config-node-babel-2.0.0.tgz#a570820c541047a61df6ae8632d0a5a5f4e20a4a"
+  integrity sha512-uVtS2pHYdBSE1cNmS+unX3LWRLTUSDc7Zcxp5VSMfdeDOvreZzlJj56jFLjco7TzD+bkIlsUy9+ClhVoJGuuCg==
   dependencies:
-    "@researchgate/eslint-config-node" "^1.5.4"
+    "@researchgate/eslint-config-node" "^2.0.0"
 
-"@researchgate/eslint-config-node@^1.5.4":
-  version "1.5.4"
-  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-1.5.4.tgz#716bebf5a9dbba249f4b43806a9c1eaaebc55d37"
-  integrity sha512-fXF8QrUNHBr75maX2ZduXKbywqm21zwG5QXkyFd7tT8vIF272yrtZjeA2d4GYAmAXf9GiRzSYejclKi4Th1xgQ==
+"@researchgate/eslint-config-node@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@researchgate/eslint-config-node/-/eslint-config-node-2.0.0.tgz#f5336a857a6935e60911ae426e9dcdd87a080406"
+  integrity sha512-q8g56Rpj6UY/rlUv/gmcdVQnE/Lsv/F4M1ZZODwx5j+clcbmkRw3//i+xSH0/oZgHMygawIape11299kODzkeg==
   dependencies:
-    "@researchgate/eslint-config-base" "^1.4.3"
+    "@researchgate/eslint-config-base" "^2.0.0"
 
 "@sinonjs/commons@^1.7.0":
   version "1.7.1"
