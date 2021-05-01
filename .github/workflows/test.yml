@@ -26,3 +26,5 @@ jobs:
         run: yarn run lint
       - name: Run tests with coverage
         run: yarn test --coverage
+      - name: Submit codecov results
+        uses: codecov/codecov-action@v1
