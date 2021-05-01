@@ -1,0 +1,15 @@
+name: Jest tests
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Install modules
+        run: yarn
+      - name: Run lint
+        run: yarn run lint
+      - name: Run tests with coverage
+        run: yarn test --coverage
