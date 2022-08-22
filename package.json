@@ -36,7 +36,7 @@
   "homepage": "https://github.com/researchgate/inline-stylesheet#readme",
   "devDependencies": {
     "@babel/cli": "7.18.10",
-    "@babel/core": "7.18.10",
+    "@babel/core": "7.18.13",
     "@babel/plugin-proposal-class-properties": "7.18.6",
     "@babel/preset-env": "7.18.10",
     "@researchgate/eslint-config-node-babel": "3.0.0",
